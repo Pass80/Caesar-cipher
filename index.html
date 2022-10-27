@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Caesar Cipher</title>
+    </head>
+    <body>
+        <div class="container">
+            <!-- code here -->
+            <div class="card">
+                <div class="card-image"></div>
+                <form class="card-form" onsubmit="return false">
+                    <div class="input">
+                        <input
+                            id="text"
+                            type="text"
+                            class="input-field"
+                            required
+                            placeholder="Geben Sie den Text ein"
+                        />
+                    </div>
+                    <div class="input">
+                        <input
+                            id="number"
+                            type="number"
+                            class="input-field"
+                            required
+                            placeholder=" Wählen Sie die Codenummer aus"
+                        />
+                    </div>
+                    <div class="action">
+                        <button
+                            class="action-button"
+                            id="encode-btn"
+                            onclick="encode()"
+                        >
+                            Verschlüsseln
+                        </button>
+                    </div>
+                    <div class="action">
+                        <button
+                            class="action-button"
+                            id="decode-btn"
+                            onclick="decode()"
+                        >
+                            Entschlüssen
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="right-container">
+                <p class="text-area" id="result"></p>
+            </div>
+        </div>
+
+        <script src="assets/main.js"></script>
+    </body>
+</html>
